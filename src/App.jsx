@@ -14,6 +14,7 @@ function App() {
     <>
       <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 p-5 flex flex-col  items-center">
         <div className="bg-white/95 backdrop-blur-lg rounded-3xl shadow-2xl p-10 w-full max-w-2xl mt-5 flex flex-col h-[90vh]">
+          {/* Header */}
           <header className="text-center mb-8 flex-shrink-0">
             <h1 className="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-2">
               Welcome to Todozi
@@ -40,7 +41,7 @@ function App() {
               Add Todo
             </button>
           </form>
-          {/*next  filters */}
+          {/* Todo List */}
           <div className="mt-4  flex flex-col gap-4">
             <div className="bg-white rounded-lg shadow-md p-4">
               <ul className="space-y-3">
@@ -69,6 +70,7 @@ function App() {
               </ul>
             </div>
           </div>
+          {/*After Create, read and delete next Task is add Filters Section */}
         </div>
       </div>
     </>
