@@ -1,11 +1,9 @@
 import { useState } from "react";
 
-function App() {
-  // This is a simple Todo application built with React.
-  // It features a responsive design with a gradient background,
-  // a form to add new todos, and buttons to filter todos by status.
-  // The todos are displayed in a list with options to mark them as complete or delete them.
+// This is a simple Todo application built with React.
+// It features a responsive design with a gradient background,
 
+function App() {
   const [todos, setTodos] = useState([
     { id: 1, text: "Learn React", completed: false },
     { id: 2, text: "Build a Todo App", completed: false },
@@ -44,34 +42,6 @@ function App() {
           </form>
           {/*next  filters */}
           <div className="mt-4  flex flex-col gap-4">
-            {/* <div className="flex justify-between items-center mt-4 mb-4">
-              <h2 className="text-xl font-semibold text-slate-700">Filters</h2>
-              <div className="flex gap-3">
-                <button
-                  className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition duration-200"
-                  style={filter === "all" ? { backgroundColor: "#4f46e5" } : {}}
-                >
-                  All
-                </button>
-                <button
-                  className="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition duration-200"
-                  style={
-                    filter === "action" ? { backgroundColor: "#4f46e5" } : {}
-                  }
-                >
-                  Active
-                </button>
-                <button
-                  className="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition duration-200"
-                  style={
-                    filter === "Completed" ? { backgroundColor: "#4f46e5" } : {}
-                  }
-                >
-                  Completed
-                </button>
-              </div>
-            </div> */}
-
             <div className="bg-white rounded-lg shadow-md p-4">
               <ul className="space-y-3">
                 {todos?.map((todo) => (
