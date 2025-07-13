@@ -21,13 +21,13 @@ function App() {
   return (
     <>
       <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 p-5 flex flex-col  items-center">
-        <div className="bg-white/95 backdrop-blur-lg rounded-3xl shadow-2xl p-10 w-full max-w-2xl mt-5 flex flex-col h-[90vh]">
+        <div className="bg-white/95 backdrop-blur-lg rounded-3xl shadow-2xl px-10 pb-5 pt-2 w-full max-w-2xl mt-5 flex flex-col overflow-y-auto h-[100vh]">
           {/* Header */}
-          <header className="text-center mb-8 flex-shrink-0">
-            <h1 className="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-2">
+          <header className="text-center mb-8 flex-shrink-0 sticky top-0 z-10 bg-slate-50">
+            <h1 className="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent pb-1">
               Welcome to Todozi - InProgress
             </h1>
-            <p className="text-md text-slate-500 ">
+            <p className="text-md text-slate-500">
               Your playful, powerful way to get things done..!!
             </p>
           </header>
@@ -88,7 +88,7 @@ function App() {
             </button>
           </form>
           {/* Todo List */}
-          <div className="mt-4  flex flex-col gap-4 scroll-y-auto overflow-y-auto h-full">
+          <div className="mt-4  flex flex-col gap-4 ">
             <div className="bg-white rounded-lg shadow-md p-4">
               <ul className="space-y-3">
                 {todos?.map((todo) => (
